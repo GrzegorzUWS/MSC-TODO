@@ -1,0 +1,47 @@
+.App {
+  text-align: center;
+
+}
+
+.navbar {
+  margin-top: 60px;
+}
+
+.list {
+  text-align: left;
+  max-width: 750px;
+  margin: auto;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+
+}
+
+.main-window {
+  height: 800px;
+  overflow: scroll;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.submit-form {
+  max-width: 400px;
+  margin: auto;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

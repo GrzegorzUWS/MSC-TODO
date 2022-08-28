@@ -1,0 +1,40 @@
+<div class="list row">
+  <button class="m-3 btn btn-sm btn-danger" (click)="removeAllTodos()">
+    Remove All
+  </button>
+  <button class="m-3 btn btn-sm btn-warning" (click)="add10()">
+    Add 10
+  </button>
+  <button class="m-3 btn btn-sm btn-warning" (click)="add100()">
+    Add 100
+  </button>
+  <button class="m-3 btn btn-sm btn-warning" (click)="add1000()">
+    Add 1000
+  </button>
+  <button class="m-3 btn btn-sm btn-warning" (click)="add3000()">
+    Add 3000
+  </button>
+  <div class="col-md-6">
+    <h4>ToDos List</h4>
+
+    <ul class="list-group main-window">
+      <li
+        class="list-group-item"
+        *ngFor="let todo of todos; let i = index"
+        [class.active]="i == currentIndex"
+        (click)="setActiveTodo(todo, i)"
+      >
+        {{ todo.title }}
+      </li>
+    </ul>
+
+
+  </div>
+  <div class="col-md-6">
+
+    <app-todo-details
+      [viewMode]="true"
+      [currentTodo]="currentTodo"
+    ></app-todo-details>
+  </div>
+</div>

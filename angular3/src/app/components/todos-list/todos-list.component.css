@@ -1,0 +1,10 @@
+.list {
+  text-align: left;
+  max-width: 750px;
+  margin: auto;
+}
+.main-window {
+
+  height: 800px;
+  overflow: scroll;
+}
